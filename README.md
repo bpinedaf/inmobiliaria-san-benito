@@ -1,106 +1,106 @@
-# Inmobiliaria San Benito - Real Estate Website
+# Inmobiliaria San Benito - Sitio Web de Bienes Raíces
 
-A modern, professional, and responsive one-page website for "Inmobiliaria San Benito," a luxury real estate company. Built with React 19, Tailwind CSS 4, and shadcn/ui components.
+Un sitio web moderno, profesional y responsivo de una sola página para "Inmobiliaria San Benito", una empresa de bienes raíces de lujo. Construido con React 19, Tailwind CSS 4 y componentes shadcn/ui.
 
-## Features
+## Características
 
-- **Modern Design**: Minimalist luxury aesthetic with emerald green accents
-- **Property Listings**: Showcase featured properties with detailed information
-- **Responsive Layout**: Mobile-first design that works on all devices
-- **Services Section**: Highlight key real estate services
-- **Testimonials**: Display client success stories
-- **Contact Form**: Easy-to-use contact form for inquiries
-- **Navigation**: Smooth scrolling navigation with fixed header
-- **Professional Typography**: Playfair Display for headlines, Inter for body text
+- **Diseño Moderno**: Estética minimalista de lujo con acentos en verde esmeralda
+- **Listados de Propiedades**: Muestra propiedades destacadas con información detallada
+- **Diseño Responsivo**: Diseño mobile-first que funciona en todos los dispositivos
+- **Sección de Servicios**: Destaca los servicios inmobiliarios clave
+- **Testimonios**: Muestra historias de éxito de clientes
+- **Formulario de Contacto**: Formulario fácil de usar para consultas
+- **Navegación**: Navegación suave con encabezado fijo
+- **Tipografía Profesional**: Playfair Display para títulos, Inter para cuerpo de texto
 
-## Tech Stack
+## Stack Tecnológico
 
-- **Frontend**: React 19 with TypeScript
-- **Styling**: Tailwind CSS 4
-- **Components**: shadcn/ui
-- **Routing**: Wouter (client-side)
-- **Build Tool**: Vite
-- **Icons**: Lucide React
+- **Frontend**: React 19 con TypeScript
+- **Estilos**: Tailwind CSS 4
+- **Componentes**: shadcn/ui
+- **Enrutamiento**: Wouter (lado del cliente)
+- **Herramienta de Construcción**: Vite
+- **Iconos**: Lucide React
 
-## Project Structure
+## Estructura del Proyecto
 
 ```
 inmobiliaria-san-benito/
 ├── client/
-│   ├── public/              # Static assets
+│   ├── public/              # Activos estáticos
 │   ├── src/
-│   │   ├── components/      # Reusable UI components
-│   │   ├── pages/           # Page components
-│   │   ├── App.tsx          # Main app component
-│   │   ├── main.tsx         # React entry point
-│   │   └── index.css        # Global styles
-│   └── index.html           # HTML template
-├── server/                  # Server placeholder
-├── package.json             # Dependencies
-└── README.md               # This file
+│   │   ├── components/      # Componentes UI reutilizables
+│   │   ├── pages/           # Componentes de páginas
+│   │   ├── App.tsx          # Componente principal
+│   │   ├── main.tsx         # Punto de entrada de React
+│   │   └── index.css        # Estilos globales
+│   └── index.html           # Plantilla HTML
+├── server/                  # Marcador de posición del servidor
+├── package.json             # Dependencias
+└── README.md               # Este archivo
 ```
 
-## Getting Started
+## Comenzar
 
-### Prerequisites
+### Requisitos Previos
 
-- Node.js 18+ or higher
-- pnpm (recommended) or npm
+- Node.js 18 o superior
+- pnpm (recomendado) o npm
 
-### Installation
+### Instalación
 
-1. **Clone the repository**
+1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/yourusername/inmobiliaria-san-benito.git
+   git clone https://github.com/tuusuario/inmobiliaria-san-benito.git
    cd inmobiliaria-san-benito
    ```
 
-2. **Install dependencies**
+2. **Instalar dependencias**
    ```bash
    pnpm install
-   # or
+   # o
    npm install
    ```
 
-3. **Start development server**
+3. **Iniciar servidor de desarrollo**
    ```bash
    pnpm dev
-   # or
+   # o
    npm run dev
    ```
 
-   The website will be available at `http://localhost:5173`
+   El sitio web estará disponible en `http://localhost:5173`
 
-## Development
+## Desarrollo
 
-### Available Scripts
+### Scripts Disponibles
 
-- `pnpm dev` - Start development server with hot reload
-- `pnpm build` - Build for production
-- `pnpm preview` - Preview production build locally
-- `pnpm check` - Run TypeScript type checking
-- `pnpm format` - Format code with Prettier
+- `pnpm dev` - Inicia el servidor de desarrollo con recarga en caliente
+- `pnpm build` - Construir para producción
+- `pnpm preview` - Previsualizar compilación de producción localmente
+- `pnpm check` - Ejecutar verificación de tipos TypeScript
+- `pnpm format` - Formatear código con Prettier
 
-### Customization
+### Personalización
 
-#### Update Company Information
+#### Actualizar Información de la Empresa
 
-Edit `client/src/pages/Home.tsx` to update:
-- Company name and branding
-- Contact information
-- Office hours
-- Social media links
+Edita `client/src/pages/Home.tsx` para actualizar:
+- Nombre y marca de la empresa
+- Información de contacto
+- Horario de oficina
+- Enlaces de redes sociales
 
-#### Modify Properties
+#### Modificar Propiedades
 
-Update the `properties` array in `Home.tsx` to add or modify property listings:
+Actualiza el array `properties` en `Home.tsx` para agregar o modificar listados de propiedades:
 
 ```typescript
 const properties = [
   {
     id: 1,
-    title: "Modern Luxury Villa",
-    location: "San Benito Heights",
+    title: "Villa de Lujo Moderna",
+    location: "Alturas de San Benito",
     price: "$2,850,000",
     beds: 5,
     baths: 4,
@@ -108,57 +108,57 @@ const properties = [
     image: "https://...",
     featured: true,
   },
-  // Add more properties...
+  // Agregar más propiedades...
 ];
 ```
 
-#### Customize Colors
+#### Personalizar Colores
 
-Edit `client/src/index.css` to modify the color palette:
+Edita `client/src/index.css` para modificar la paleta de colores:
 
 ```css
 :root {
-  --primary: #1B4D3E;           /* Emerald green */
-  --primary-foreground: #F5F3F0; /* Cream */
-  --accent: #D4A574;             /* Gold */
-  --background: #FAF6F1;         /* Off-white */
-  --foreground: #2C2420;         /* Dark brown */
-  /* ... more colors ... */
+  --primary: #1B4D3E;           /* Verde esmeralda */
+  --primary-foreground: #F5F3F0; /* Crema */
+  --accent: #D4A574;             /* Oro */
+  --background: #FAF6F1;         /* Blanco roto */
+  --foreground: #2C2420;         /* Marrón oscuro */
+  /* ... más colores ... */
 }
 ```
 
-#### Update Typography
+#### Actualizar Tipografía
 
-Fonts are loaded from Google Fonts in `client/index.html`:
-- **Headlines**: Playfair Display (serif, luxury feel)
-- **Body**: Inter (sans-serif, modern readability)
+Las fuentes se cargan desde Google Fonts en `client/index.html`:
+- **Títulos**: Playfair Display (serif, sensación de lujo)
+- **Cuerpo**: Inter (sans-serif, legibilidad moderna)
 
-## Deployment
+## Despliegue
 
-### Deploy to Netlify
+### Desplegar en Netlify
 
-1. **Push to GitHub**
+1. **Enviar a GitHub**
    ```bash
    git add .
-   git commit -m "Initial commit"
+   git commit -m "Commit inicial"
    git push origin main
    ```
 
-2. **Connect to Netlify**
-   - Go to [Netlify](https://netlify.com)
-   - Click "New site from Git"
-   - Select your GitHub repository
-   - Configure build settings:
-     - **Build command**: `pnpm build`
-     - **Publish directory**: `dist/public`
-   - Click "Deploy site"
+2. **Conectar a Netlify**
+   - Ve a [Netlify](https://netlify.com)
+   - Haz clic en "Nuevo sitio desde Git"
+   - Selecciona tu repositorio de GitHub
+   - Configura los parámetros de construcción:
+     - **Comando de construcción**: `pnpm build`
+     - **Directorio de publicación**: `dist/public`
+   - Haz clic en "Desplegar sitio"
 
-3. **Custom Domain** (Optional)
-   - In Netlify dashboard, go to "Domain settings"
-   - Add your custom domain
-   - Follow DNS configuration instructions
+3. **Dominio Personalizado** (Opcional)
+   - En el panel de Netlify, ve a "Configuración de dominio"
+   - Agrega tu dominio personalizado
+   - Sigue las instrucciones de configuración de DNS
 
-### Deploy to Other Platforms
+### Desplegar en Otras Plataformas
 
 #### Vercel
 ```bash
@@ -167,54 +167,54 @@ vercel
 ```
 
 #### GitHub Pages
-1. Update `package.json` with your repository URL
-2. Run: `pnpm build`
-3. Push the `dist` folder to GitHub Pages
+1. Actualiza `package.json` con la URL de tu repositorio
+2. Ejecuta: `pnpm build`
+3. Envía la carpeta `dist` a GitHub Pages
 
-## Browser Support
+## Compatibilidad de Navegadores
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
+- Chrome (última versión)
+- Firefox (última versión)
+- Safari (última versión)
+- Edge (última versión)
 
-## Performance
+## Rendimiento
 
-- Optimized images with lazy loading
-- CSS minification and tree-shaking
-- JavaScript code splitting
-- Responsive images for different screen sizes
+- Imágenes optimizadas con carga perezosa
+- Minificación de CSS y tree-shaking
+- División de código JavaScript
+- Imágenes responsivas para diferentes tamaños de pantalla
 
 ## SEO
 
-The website includes:
-- Semantic HTML structure
-- Meta tags for social sharing
-- Open Graph tags
-- Mobile-friendly viewport configuration
+El sitio web incluye:
+- Estructura HTML semántica
+- Etiquetas meta para compartir en redes sociales
+- Etiquetas Open Graph
+- Configuración de viewport amigable con dispositivos móviles
 
-## License
+## Licencia
 
-MIT License - feel free to use this project for your own purposes.
+Licencia MIT - siéntete libre de usar este proyecto para tus propios propósitos.
 
-## Support
+## Soporte
 
-For questions or issues, please:
-1. Check existing documentation
-2. Review the code comments
-3. Create an issue on GitHub
+Para preguntas o problemas, por favor:
+1. Revisa la documentación existente
+2. Revisa los comentarios en el código
+3. Crea un problema en GitHub
 
-## Future Enhancements
+## Mejoras Futuras
 
-- [ ] Property search and filtering
-- [ ] Advanced property details page
-- [ ] Virtual tours
-- [ ] Blog section
-- [ ] Newsletter signup
-- [ ] Multi-language support
-- [ ] Integration with MLS data
-- [ ] CRM integration
+- [ ] Búsqueda y filtrado de propiedades
+- [ ] Página de detalles avanzados de propiedades
+- [ ] Tours virtuales
+- [ ] Sección de blog
+- [ ] Suscripción a boletín informativo
+- [ ] Soporte multiidioma
+- [ ] Integración con datos de MLS
+- [ ] Integración con CRM
 
 ---
 
-**Built with ❤️ for luxury real estate excellence**
+**Construido con ❤️ para la excelencia en bienes raíces de lujo**

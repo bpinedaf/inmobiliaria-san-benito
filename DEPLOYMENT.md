@@ -1,246 +1,246 @@
-# Deployment Guide - Inmobiliaria San Benito
+# Guía de Despliegue - Inmobiliaria San Benito
 
-This guide provides step-by-step instructions to deploy your website to GitHub and Netlify.
+Esta guía proporciona instrucciones paso a paso para desplegar tu sitio web en GitHub y Netlify.
 
-## Prerequisites
+## Requisitos Previos
 
-Before you begin, ensure you have:
-- A GitHub account (free at [github.com](https://github.com))
-- A Netlify account (free at [netlify.com](https://netlify.com))
-- Git installed on your computer
-- Node.js and pnpm installed
+Antes de comenzar, asegúrate de tener:
+- Una cuenta de GitHub (gratuita en [github.com](https://github.com))
+- Una cuenta de Netlify (gratuita en [netlify.com](https://netlify.com))
+- Git instalado en tu computadora
+- Node.js y pnpm instalados
 
-## Step 1: Prepare Your Local Repository
+## Paso 1: Preparar tu Repositorio Local
 
-### Initialize Git (if not already done)
+### Inicializar Git (si aún no lo has hecho)
 
 ```bash
 cd inmobiliaria-san-benito
 git init
 git add .
-git commit -m "Initial commit: Inmobiliaria San Benito website"
+git commit -m "Commit inicial: Sitio web de Inmobiliaria San Benito"
 ```
 
-### Verify the build works
+### Verificar que la construcción funciona
 
 ```bash
 pnpm install
 pnpm build
 ```
 
-You should see output like:
+Deberías ver un resultado como:
 ```
 ✓ built in X.XXs
 ```
 
-## Step 2: Create a GitHub Repository
+## Paso 2: Crear un Repositorio en GitHub
 
-### Option A: Create a new repository on GitHub
+### Opción A: Crear un nuevo repositorio en GitHub
 
-1. Go to [github.com/new](https://github.com/new)
-2. Enter repository name: `inmobiliaria-san-benito`
-3. Add description: "Professional real estate website for Inmobiliaria San Benito"
-4. Choose visibility: **Public** (recommended for portfolio) or **Private**
-5. Click "Create repository"
+1. Ve a [github.com/new](https://github.com/new)
+2. Ingresa el nombre del repositorio: `inmobiliaria-san-benito`
+3. Agrega descripción: "Sitio web profesional de bienes raíces para Inmobiliaria San Benito"
+4. Elige visibilidad: **Público** (recomendado para portafolio) o **Privado**
+5. Haz clic en "Crear repositorio"
 
-### Option B: Using GitHub CLI
+### Opción B: Usando GitHub CLI
 
 ```bash
 gh repo create inmobiliaria-san-benito --public --source=. --remote=origin --push
 ```
 
-## Step 3: Push to GitHub
+## Paso 3: Enviar a GitHub
 
-### Add remote and push
+### Agregar remoto y enviar
 
 ```bash
-# If you created the repo on GitHub, add the remote
-git remote add origin https://github.com/YOUR_USERNAME/inmobiliaria-san-benito.git
+# Si creaste el repositorio en GitHub, agrega el remoto
+git remote add origin https://github.com/TU_USUARIO/inmobiliaria-san-benito.git
 git branch -M main
 git push -u origin main
 ```
 
-### Verify on GitHub
+### Verificar en GitHub
 
-Visit `https://github.com/YOUR_USERNAME/inmobiliaria-san-benito` to confirm your code is uploaded.
+Visita `https://github.com/TU_USUARIO/inmobiliaria-san-benito` para confirmar que tu código se ha subido.
 
-## Step 4: Deploy to Netlify
+## Paso 4: Desplegar en Netlify
 
-### Option A: Deploy via Netlify UI (Recommended)
+### Opción A: Desplegar a través de la Interfaz de Netlify (Recomendado)
 
-1. **Go to Netlify**
-   - Visit [app.netlify.com](https://app.netlify.com)
-   - Sign in with GitHub (or create account)
+1. **Ir a Netlify**
+   - Visita [app.netlify.com](https://app.netlify.com)
+   - Inicia sesión con GitHub (o crea una cuenta)
 
-2. **Connect Repository**
-   - Click "New site from Git"
-   - Click "GitHub"
-   - Select your repository: `inmobiliaria-san-benito`
+2. **Conectar Repositorio**
+   - Haz clic en "Nuevo sitio desde Git"
+   - Haz clic en "GitHub"
+   - Selecciona tu repositorio: `inmobiliaria-san-benito`
 
-3. **Configure Build Settings**
-   - **Base directory**: (leave empty)
-   - **Build command**: `pnpm build`
-   - **Publish directory**: `dist/public`
+3. **Configurar Parámetros de Construcción**
+   - **Directorio base**: (dejar vacío)
+   - **Comando de construcción**: `pnpm build`
+   - **Directorio de publicación**: `dist/public`
 
-4. **Deploy**
-   - Click "Deploy site"
-   - Wait for build to complete (usually 1-2 minutes)
-   - Your site will be live at a Netlify URL like: `https://inmobiliaria-san-benito-abc123.netlify.app`
+4. **Desplegar**
+   - Haz clic en "Desplegar sitio"
+   - Espera a que se complete la construcción (generalmente 1-2 minutos)
+   - Tu sitio estará en vivo en una URL de Netlify como: `https://inmobiliaria-san-benito-abc123.netlify.app`
 
-### Option B: Deploy via Netlify CLI
+### Opción B: Desplegar a través de Netlify CLI
 
 ```bash
-# Install Netlify CLI
+# Instalar Netlify CLI
 npm install -g netlify-cli
 
-# Login to Netlify
+# Iniciar sesión en Netlify
 netlify login
 
-# Deploy
+# Desplegar
 netlify deploy --prod --dir=dist/public
 ```
 
-## Step 5: Set Up Custom Domain (Optional)
+## Paso 5: Configurar Dominio Personalizado (Opcional)
 
-### In Netlify Dashboard
+### En el Panel de Netlify
 
-1. Go to your site settings
-2. Click "Domain management"
-3. Click "Add custom domain"
-4. Enter your domain (e.g., `sanbenitoreal.estate`)
-5. Follow DNS configuration instructions
+1. Ve a la configuración de tu sitio
+2. Haz clic en "Gestión de dominios"
+3. Haz clic en "Agregar dominio personalizado"
+4. Ingresa tu dominio (p. ej., `sanbenitoreal.estate`)
+5. Sigue las instrucciones de configuración de DNS
 
-### Update DNS Records
+### Actualizar Registros DNS
 
-Contact your domain registrar and update DNS records to point to Netlify:
-- **Type**: CNAME
-- **Name**: www
-- **Value**: (provided by Netlify)
+Contacta a tu registrador de dominios y actualiza los registros DNS para que apunten a Netlify:
+- **Tipo**: CNAME
+- **Nombre**: www
+- **Valor**: (proporcionado por Netlify)
 
-Or use Netlify's nameservers for easier setup.
+O usa los servidores de nombres de Netlify para una configuración más fácil.
 
-## Step 6: Enable HTTPS
+## Paso 6: Habilitar HTTPS
 
-Netlify automatically provides free HTTPS with Let's Encrypt. No additional setup needed!
+Netlify proporciona automáticamente HTTPS gratuito con Let's Encrypt. ¡No se requiere configuración adicional!
 
-## Step 7: Set Up Continuous Deployment
+## Paso 7: Configurar Despliegue Continuo
 
-Your site will automatically redeploy whenever you push to GitHub:
+Tu sitio se redesplegará automáticamente cada vez que envíes a GitHub:
 
-1. Make changes locally
-2. Commit and push:
+1. Realiza cambios localmente
+2. Confirma y envía:
    ```bash
    git add .
-   git commit -m "Update property listings"
+   git commit -m "Actualizar listados de propiedades"
    git push origin main
    ```
-3. Netlify automatically rebuilds and deploys
-4. Your changes are live in 1-2 minutes
+3. Netlify automáticamente reconstruye y despliega
+4. Tus cambios estarán en vivo en 1-2 minutos
 
-## Updating Your Website
+## Actualizar tu Sitio Web
 
-### Make Changes Locally
+### Realizar Cambios Localmente
 
 ```bash
-# Edit files in client/src/pages/Home.tsx or other files
-# Test locally
+# Editar archivos en client/src/pages/Home.tsx u otros archivos
+# Probar localmente
 pnpm dev
 
-# Build and verify
+# Construir y verificar
 pnpm build
 ```
 
-### Deploy Changes
+### Desplegar Cambios
 
 ```bash
 git add .
-git commit -m "Describe your changes"
+git commit -m "Describe tus cambios"
 git push origin main
 ```
 
-Netlify will automatically rebuild and deploy!
+¡Netlify automáticamente reconstruirá y desplegará!
 
-## Troubleshooting
+## Solución de Problemas
 
-### Build Fails on Netlify
+### La Construcción Falla en Netlify
 
-1. Check build logs in Netlify dashboard
-2. Verify `pnpm build` works locally
-3. Ensure `dist/public` directory exists after build
-4. Check Node.js version compatibility
+1. Revisa los registros de construcción en el panel de Netlify
+2. Verifica que `pnpm build` funcione localmente
+3. Asegúrate de que el directorio `dist/public` exista después de la construcción
+4. Verifica la compatibilidad de versión de Node.js
 
-### Site Shows Old Content
+### El Sitio Muestra Contenido Antiguo
 
-1. Clear browser cache (Ctrl+Shift+Delete or Cmd+Shift+Delete)
-2. Check Netlify deployment status
-3. Force a new deploy from Netlify dashboard
+1. Borra el caché del navegador (Ctrl+Mayús+Supr o Cmd+Mayús+Supr)
+2. Verifica el estado de despliegue en Netlify
+3. Fuerza un nuevo despliegue desde el panel de Netlify
 
-### Custom Domain Not Working
+### El Dominio Personalizado No Funciona
 
-1. Verify DNS records are updated (can take 24-48 hours)
-2. Check domain registrar settings
-3. Use Netlify's nameservers for faster setup
+1. Verifica que los registros DNS se hayan actualizado (puede tomar 24-48 horas)
+2. Revisa la configuración del registrador de dominios
+3. Usa los servidores de nombres de Netlify para una configuración más rápida
 
-## Performance Optimization
+## Optimización de Rendimiento
 
-### Enable Caching
+### Habilitar Caché
 
-In Netlify dashboard:
-1. Go to "Build & deploy" → "Cache"
-2. Click "Clear cache and redeploy"
+En el panel de Netlify:
+1. Ve a "Construir y desplegar" → "Caché"
+2. Haz clic en "Borrar caché y redesplegador"
 
-### Monitor Performance
+### Monitorear Rendimiento
 
-- Use [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-- Check Netlify Analytics
-- Monitor Core Web Vitals
+- Usa [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- Revisa Netlify Analytics
+- Monitorea Core Web Vitals
 
-## Security
+## Seguridad
 
-### Environment Variables
+### Variables de Entorno
 
-If you add sensitive data:
+Si agregas datos sensibles:
 
-1. Create `.env.local` file (never commit)
-2. Add to `.gitignore`
-3. In Netlify: Settings → Build & deploy → Environment
+1. Crea archivo `.env.local` (nunca confirmar)
+2. Agrega a `.gitignore`
+3. En Netlify: Configuración → Construir y desplegar → Entorno
 
 ### HTTPS
 
-- Automatically enabled by Netlify
-- Renews automatically
-- No additional configuration needed
+- Habilitado automáticamente por Netlify
+- Se renueva automáticamente
+- No se requiere configuración adicional
 
-## Rollback to Previous Version
+## Revertir a Versión Anterior
 
-If something goes wrong:
+Si algo sale mal:
 
-1. In Netlify dashboard, go to "Deploys"
-2. Find the previous working deployment
-3. Click "Publish deploy"
+1. En el panel de Netlify, ve a "Despliegues"
+2. Encuentra el despliegue anterior que funcionaba
+3. Haz clic en "Publicar despliegue"
 
-Or revert in Git:
+O revierte en Git:
 
 ```bash
 git revert HEAD
 git push origin main
 ```
 
-## Additional Resources
+## Recursos Adicionales
 
-- [Netlify Documentation](https://docs.netlify.com)
-- [GitHub Pages Guide](https://pages.github.com)
-- [Vite Deployment Guide](https://vitejs.dev/guide/static-deploy.html)
-- [React Best Practices](https://react.dev)
+- [Documentación de Netlify](https://docs.netlify.com)
+- [Guía de GitHub Pages](https://pages.github.com)
+- [Guía de Despliegue de Vite](https://vitejs.dev/guide/static-deploy.html)
+- [Mejores Prácticas de React](https://react.dev)
 
-## Support
+## Soporte
 
-For issues:
-1. Check Netlify build logs
-2. Review GitHub Actions (if enabled)
-3. Test locally with `pnpm dev`
-4. Check browser console for errors
+Para problemas:
+1. Revisa los registros de construcción de Netlify
+2. Revisa GitHub Actions (si está habilitado)
+3. Prueba localmente con `pnpm dev`
+4. Revisa la consola del navegador para errores
 
 ---
 
-**Your website is now live and ready to showcase Inmobiliaria San Benito to the world!**
+**¡Tu sitio web ahora está en vivo y listo para mostrar Inmobiliaria San Benito al mundo!**

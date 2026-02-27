@@ -9,6 +9,8 @@ import { useState } from "react";
  * - Typography-first design with Playfair Display headlines
  * - Generous whitespace and sophisticated restraint
  * - Smooth, deliberate interactions (300-500ms)
+ * 
+ * Language: Spanish (Latin American)
  */
 
 export default function Home() {
@@ -18,8 +20,8 @@ export default function Home() {
   const properties = [
     {
       id: 1,
-      title: "Modern Luxury Villa",
-      location: "San Benito Heights",
+      title: "Villa de Lujo Moderna",
+      location: "Alturas de San Benito",
       price: "$2,850,000",
       beds: 5,
       baths: 4,
@@ -29,8 +31,8 @@ export default function Home() {
     },
     {
       id: 2,
-      title: "Luxury Penthouse",
-      location: "Downtown District",
+      title: "Penthouse de Lujo",
+      location: "Distrito Centro",
       price: "$3,200,000",
       beds: 4,
       baths: 3,
@@ -40,8 +42,8 @@ export default function Home() {
     },
     {
       id: 3,
-      title: "Contemporary Apartment",
-      location: "Riverside Quarter",
+      title: "Apartamento Contemporáneo",
+      location: "Barrio Ribereño",
       price: "$1,650,000",
       beds: 3,
       baths: 2,
@@ -53,23 +55,23 @@ export default function Home() {
 
   const services = [
     {
-      title: "Property Sales",
-      description: "Expert guidance in buying and selling premium properties with market-leading expertise.",
+      title: "Venta de Propiedades",
+      description: "Asesoramiento experto en la compra y venta de propiedades premium con experiencia líder en el mercado.",
       icon: "🏠",
     },
     {
-      title: "Investment Advisory",
-      description: "Strategic investment opportunities in high-growth real estate markets.",
+      title: "Asesoramiento de Inversión",
+      description: "Oportunidades de inversión estratégica en mercados inmobiliarios de alto crecimiento.",
       icon: "📈",
     },
     {
-      title: "Property Management",
-      description: "Comprehensive management services for residential and commercial properties.",
+      title: "Administración de Propiedades",
+      description: "Servicios integrales de administración para propiedades residenciales y comerciales.",
       icon: "🔑",
     },
     {
-      title: "Market Analysis",
-      description: "In-depth market research and trend analysis for informed decisions.",
+      title: "Análisis de Mercado",
+      description: "Investigación profunda del mercado y análisis de tendencias para decisiones informadas.",
       icon: "📊",
     },
   ];
@@ -77,20 +79,20 @@ export default function Home() {
   const testimonials = [
     {
       name: "María González",
-      role: "Property Owner",
-      text: "Inmobiliaria San Benito helped us find our dream home. Their professionalism and market knowledge are unmatched.",
+      role: "Propietaria",
+      text: "Inmobiliaria San Benito nos ayudó a encontrar nuestra casa de ensueño. Su profesionalismo y conocimiento del mercado son incomparables.",
       rating: 5,
     },
     {
       name: "Carlos Rodríguez",
-      role: "Investor",
-      text: "Excellent investment opportunities and strategic guidance. Highly recommended for serious investors.",
+      role: "Inversionista",
+      text: "Excelentes oportunidades de inversión y asesoramiento estratégico. Altamente recomendado para inversores serios.",
       rating: 5,
     },
     {
       name: "Laura Martínez",
-      role: "First-time Buyer",
-      text: "The team made the buying process smooth and transparent. Great experience from start to finish.",
+      role: "Primera Compradora",
+      text: "El equipo hizo que el proceso de compra fuera fluido y transparente. Excelente experiencia de principio a fin.",
       rating: 5,
     },
   ];
@@ -107,13 +109,13 @@ export default function Home() {
             <span className="font-playfair text-xl font-bold text-foreground">San Benito</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
-            <a href="#properties" className="text-sm font-medium hover:text-primary transition-colors">Properties</a>
-            <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">Services</a>
-            <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">About</a>
-            <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">Contact</a>
+            <a href="#properties" className="text-sm font-medium hover:text-primary transition-colors">Propiedades</a>
+            <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">Servicios</a>
+            <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">Acerca de</a>
+            <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">Contacto</a>
           </div>
           <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Inquire
+            Consultar
           </Button>
         </div>
       </nav>
@@ -125,36 +127,36 @@ export default function Home() {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <div className="inline-block px-3 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full">
-                Luxury Real Estate Excellence
+                Excelencia en Bienes Raíces de Lujo
               </div>
               <h1 className="text-5xl md:text-6xl font-playfair font-bold text-foreground leading-tight">
-                Your Gateway to
-                <span className="text-primary"> Premium Living</span>
+                Tu Puerta a la
+                <span className="text-primary"> Vida de Lujo</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-                Discover curated luxury properties and investment opportunities with San Benito's market-leading expertise.
+                Descubre propiedades de lujo seleccionadas y oportunidades de inversión con la experiencia líder de San Benito en el mercado.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
-                Explore Properties <ChevronRight className="w-4 h-4" />
+                Explorar Propiedades <ChevronRight className="w-4 h-4" />
               </Button>
               <Button size="lg" variant="outline" className="border-border hover:bg-secondary">
-                Schedule Consultation
+                Agendar Consulta
               </Button>
             </div>
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border">
               <div>
                 <div className="text-2xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">Properties Sold</div>
+                <div className="text-sm text-muted-foreground">Propiedades Vendidas</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-primary">25+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-sm text-muted-foreground">Años de Experiencia</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-primary">98%</div>
-                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+                <div className="text-sm text-muted-foreground">Satisfacción de Clientes</div>
               </div>
             </div>
           </div>
@@ -163,13 +165,13 @@ export default function Home() {
           <div className="relative h-96 md:h-full min-h-96 rounded-lg overflow-hidden shadow-2xl animate-fade-in-delayed">
             <img
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663336314963/BBKWny7SuwD37LLc3PAySj/hero-luxury-modern-home-ahUvw5SSagE92dKyyhnz7r.webp"
-              alt="Featured Property"
+              alt="Propiedad Destacada"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <h3 className="text-2xl font-bold mb-2">Architectural Masterpiece</h3>
-              <p className="text-sm opacity-90">San Benito Heights • $2.85M</p>
+              <h3 className="text-2xl font-bold mb-2">Obra Maestra Arquitectónica</h3>
+              <p className="text-sm opacity-90">Alturas de San Benito • $2.85M</p>
             </div>
           </div>
         </div>
@@ -180,13 +182,13 @@ export default function Home() {
         <div className="container space-y-12">
           <div className="space-y-4 max-w-2xl">
             <div className="inline-block px-3 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full">
-              Featured Listings
+              Listados Destacados
             </div>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground">
-              Exceptional Properties
+              Propiedades Excepcionales
             </h2>
             <p className="text-lg text-muted-foreground">
-              Handpicked luxury properties that represent the finest in real estate investment.
+              Propiedades de lujo cuidadosamente seleccionadas que representan lo mejor en inversión inmobiliaria.
             </p>
           </div>
 
@@ -208,7 +210,7 @@ export default function Home() {
                   />
                   {property.featured && (
                     <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold">
-                      Featured
+                      Destacada
                     </div>
                   )}
                 </div>
@@ -226,23 +228,23 @@ export default function Home() {
                       <div className="flex items-center justify-center gap-1 text-foreground font-bold">
                         <Bed className="w-4 h-4" /> {property.beds}
                       </div>
-                      <div className="text-xs text-muted-foreground">Beds</div>
+                      <div className="text-xs text-muted-foreground">Hab.</div>
                     </div>
                     <div className="text-center">
                       <div className="flex items-center justify-center gap-1 text-foreground font-bold">
                         <Bath className="w-4 h-4" /> {property.baths}
                       </div>
-                      <div className="text-xs text-muted-foreground">Baths</div>
+                      <div className="text-xs text-muted-foreground">Baños</div>
                     </div>
                     <div className="text-center">
                       <div className="flex items-center justify-center gap-1 text-foreground font-bold">
                         <Square className="w-4 h-4" /> {property.sqft}
                       </div>
-                      <div className="text-xs text-muted-foreground">Sqft</div>
+                      <div className="text-xs text-muted-foreground">m²</div>
                     </div>
                   </div>
                   <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                    View Details
+                    Ver Detalles
                   </Button>
                 </div>
               </Card>
@@ -251,7 +253,7 @@ export default function Home() {
 
           <div className="text-center pt-8">
             <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-secondary">
-              View All Properties <ChevronRight className="w-4 h-4 ml-2" />
+              Ver Todas las Propiedades <ChevronRight className="w-4 h-4 ml-2" />
             </Button>
           </div>
         </div>
@@ -262,10 +264,10 @@ export default function Home() {
         <div className="container space-y-12">
           <div className="space-y-4 max-w-2xl">
             <div className="inline-block px-3 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full">
-              What We Offer
+              Lo Que Ofrecemos
             </div>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground">
-              Comprehensive Real Estate Services
+              Servicios Inmobiliarios Integrales
             </h2>
           </div>
 
@@ -286,10 +288,10 @@ export default function Home() {
         <div className="container space-y-12">
           <div className="space-y-4 max-w-2xl">
             <div className="inline-block px-3 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full">
-              Client Success Stories
+              Historias de Éxito de Clientes
             </div>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground">
-              Trusted by Satisfied Clients
+              Confianza de Clientes Satisfechos
             </h2>
           </div>
 
@@ -316,17 +318,17 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-primary text-primary-foreground">
         <div className="container space-y-8 text-center">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold">
-            Ready to Find Your Dream Property?
+            ¿Listo para Encontrar tu Propiedad de Ensueño?
           </h2>
           <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Connect with our expert team today and discover the perfect investment opportunity.
+            Conecta con nuestro equipo de expertos hoy y descubre la oportunidad de inversión perfecta.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-              Schedule Consultation
+              Agendar Consulta
             </Button>
             <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
-              Browse Properties
+              Explorar Propiedades
             </Button>
           </div>
         </div>
@@ -338,10 +340,10 @@ export default function Home() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground">
-                Get in Touch
+                Ponte en Contacto
               </h2>
               <p className="text-lg text-muted-foreground">
-                Have questions? Our team of experts is ready to help you find the perfect property.
+                ¿Tienes preguntas? Nuestro equipo de expertos está listo para ayudarte a encontrar la propiedad perfecta.
               </p>
             </div>
 
@@ -351,7 +353,7 @@ export default function Home() {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="font-bold text-foreground">Phone</div>
+                  <div className="font-bold text-foreground">Teléfono</div>
                   <div className="text-muted-foreground">+1 (555) 123-4567</div>
                 </div>
               </div>
@@ -361,7 +363,7 @@ export default function Home() {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="font-bold text-foreground">Email</div>
+                  <div className="font-bold text-foreground">Correo Electrónico</div>
                   <div className="text-muted-foreground">info@sanbenitoreal.estate</div>
                 </div>
               </div>
@@ -371,8 +373,8 @@ export default function Home() {
                   <MapPinIcon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="font-bold text-foreground">Office</div>
-                  <div className="text-muted-foreground">123 Luxury Avenue, San Benito, CA 94000</div>
+                  <div className="font-bold text-foreground">Oficina</div>
+                  <div className="text-muted-foreground">123 Avenida de Lujo, San Benito, CA 94000</div>
                 </div>
               </div>
 
@@ -381,9 +383,9 @@ export default function Home() {
                   <Clock className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="font-bold text-foreground">Hours</div>
-                  <div className="text-muted-foreground">Mon - Fri: 9:00 AM - 6:00 PM</div>
-                  <div className="text-muted-foreground">Sat - Sun: 10:00 AM - 4:00 PM</div>
+                  <div className="font-bold text-foreground">Horario</div>
+                  <div className="text-muted-foreground">Lun - Vie: 9:00 AM - 6:00 PM</div>
+                  <div className="text-muted-foreground">Sab - Dom: 10:00 AM - 4:00 PM</div>
                 </div>
               </div>
             </div>
@@ -391,34 +393,34 @@ export default function Home() {
 
           {/* Contact Form */}
           <Card className="p-8 space-y-6">
-            <h3 className="text-2xl font-bold text-foreground">Send us a Message</h3>
+            <h3 className="text-2xl font-bold text-foreground">Envíanos un Mensaje</h3>
             <form className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">Full Name</label>
+                <label className="block text-sm font-medium text-foreground mb-2">Nombre Completo</label>
                 <input
                   type="text"
                   className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
-                  placeholder="Your name"
+                  placeholder="Tu nombre"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">Email</label>
+                <label className="block text-sm font-medium text-foreground mb-2">Correo Electrónico</label>
                 <input
                   type="email"
                   className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
-                  placeholder="your@email.com"
+                  placeholder="tu@correo.com"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">Message</label>
+                <label className="block text-sm font-medium text-foreground mb-2">Mensaje</label>
                 <textarea
                   rows={4}
                   className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
-                  placeholder="Tell us about your real estate needs..."
+                  placeholder="Cuéntanos sobre tus necesidades inmobiliarias..."
                 />
               </div>
               <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                Send Message
+                Enviar Mensaje
               </Button>
             </form>
           </Card>
@@ -437,42 +439,42 @@ export default function Home() {
                 <span className="font-bold">Inmobiliaria San Benito</span>
               </div>
               <p className="text-sm opacity-80">
-                Your trusted partner in luxury real estate since 1999.
+                Tu socio de confianza en bienes raíces de lujo desde 1999.
               </p>
             </div>
 
             <div className="space-y-3">
-              <h4 className="font-bold">Quick Links</h4>
+              <h4 className="font-bold">Enlaces Rápidos</h4>
               <ul className="text-sm space-y-2 opacity-80">
-                <li><a href="#properties" className="hover:opacity-100 transition-opacity">Properties</a></li>
-                <li><a href="#services" className="hover:opacity-100 transition-opacity">Services</a></li>
-                <li><a href="#about" className="hover:opacity-100 transition-opacity">About Us</a></li>
-                <li><a href="#contact" className="hover:opacity-100 transition-opacity">Contact</a></li>
+                <li><a href="#properties" className="hover:opacity-100 transition-opacity">Propiedades</a></li>
+                <li><a href="#services" className="hover:opacity-100 transition-opacity">Servicios</a></li>
+                <li><a href="#about" className="hover:opacity-100 transition-opacity">Acerca de Nosotros</a></li>
+                <li><a href="#contact" className="hover:opacity-100 transition-opacity">Contacto</a></li>
               </ul>
             </div>
 
             <div className="space-y-3">
-              <h4 className="font-bold">Services</h4>
+              <h4 className="font-bold">Servicios</h4>
               <ul className="text-sm space-y-2 opacity-80">
-                <li><a href="#" className="hover:opacity-100 transition-opacity">Buy Property</a></li>
-                <li><a href="#" className="hover:opacity-100 transition-opacity">Sell Property</a></li>
-                <li><a href="#" className="hover:opacity-100 transition-opacity">Investment</a></li>
-                <li><a href="#" className="hover:opacity-100 transition-opacity">Management</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Comprar Propiedad</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Vender Propiedad</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Inversión</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Administración</a></li>
               </ul>
             </div>
 
             <div className="space-y-3">
               <h4 className="font-bold">Legal</h4>
               <ul className="text-sm space-y-2 opacity-80">
-                <li><a href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</a></li>
-                <li><a href="#" className="hover:opacity-100 transition-opacity">Terms of Service</a></li>
-                <li><a href="#" className="hover:opacity-100 transition-opacity">Cookie Policy</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Política de Privacidad</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Términos de Servicio</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Política de Cookies</a></li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm opacity-80">
-            <p>&copy; 2026 Inmobiliaria San Benito. All rights reserved.</p>
+            <p>&copy; 2026 Inmobiliaria San Benito. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
