@@ -131,7 +131,7 @@ export default function Home() {
                 <span className="text-primary"> Vida de Lujo</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-                Brindamos propiedades excepcionales para clientes que valoran ubicación, arquitectura y proyección patrimonial.
+                Seleccionamos y conectamos propiedades excepcionales con clientes que buscan ubicación privilegiada, arquitectura de carácter y visión patrimonial.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
