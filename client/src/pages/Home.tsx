@@ -103,7 +103,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
-            <img src="/logotipo_00.png" alt="Inmobiliaria San Benito" className="h-24 w-24" />
+            <img src="/logotipo_00.png" alt="Inmobiliaria San Benito" className="h-auto w-32" />
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#properties" className="text-sm font-medium hover:text-primary transition-colors">Propiedades</a>
