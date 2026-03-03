@@ -32,7 +32,7 @@ export default function Home() {
     {
       id: 2,
       title: "Penthouse de Lujo",
-      location: "Distrito Centro",
+      location: "Carretera al Salvador",
       price: "$3,200,000",
       beds: 4,
       baths: 3,
@@ -43,7 +43,7 @@ export default function Home() {
     {
       id: 3,
       title: "Apartamento Contemporáneo",
-      location: "Barrio Ribereño",
+      location: "San José Pinula",
       price: "$1,650,000",
       beds: 3,
       baths: 2,
