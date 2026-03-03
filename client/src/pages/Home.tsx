@@ -124,7 +124,7 @@ export default function Home() {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <div className="inline-block px-3 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full">
-                Excelencia en Bienes Raíces de Lujo
+                Selección estratégica en bienes raíces de alto valor
               </div>
               <h1 className="text-5xl md:text-6xl font-playfair font-bold text-foreground leading-tight">
                 Tu Puerta a la
