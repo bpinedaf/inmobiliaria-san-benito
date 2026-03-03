@@ -103,7 +103,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
-            <img src="/logotipo_00.png" alt="Inmobiliaria San Benito" className="h-10 w-auto" />
+            <img src="/logotipo_00.png" alt="Inmobiliaria San Benito" className="h-16 w-auto" />
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#properties" className="text-sm font-medium hover:text-primary transition-colors">Propiedades</a>
@@ -430,7 +430,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <img src="/logotipo_00.png" alt="Inmobiliaria San Benito" className="h-8 w-auto" />
+                <img src="/logotipo_00.png" alt="Inmobiliaria San Benito" className="h-16 w-auto" />
                 <span className="font-bold">Inmobiliaria San Benito</span>
               </div>
               <p className="text-sm opacity-80">
