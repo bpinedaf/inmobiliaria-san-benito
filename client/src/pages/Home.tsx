@@ -127,7 +127,7 @@ export default function Home() {
                 Selección estratégica en bienes raíces de alto valor
               </div>
               <h1 className="text-5xl md:text-6xl font-playfair font-bold text-foreground leading-tight">
-                Arquitectura excepcional./n
+                Arquitectura excepcional.  
                 <span className="text-primary"> Inversión inteligente.</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
