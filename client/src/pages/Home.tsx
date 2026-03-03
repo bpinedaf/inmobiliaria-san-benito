@@ -103,10 +103,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">SB</span>
-            </div>
-            <span className="font-playfair text-xl font-bold text-foreground">San Benito</span>
+            <img src="/logotipo_00.png" alt="Inmobiliaria San Benito" className="h-10 w-auto" />
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#properties" className="text-sm font-medium hover:text-primary transition-colors">Propiedades</a>
@@ -354,7 +351,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="font-bold text-foreground">Teléfono</div>
-                  <div className="text-muted-foreground">+1 (555) 123-4567</div>
+                  <div className="text-muted-foreground">(502) 5996-8004</div>
                 </div>
               </div>
 
@@ -364,7 +361,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="font-bold text-foreground">Correo Electrónico</div>
-                  <div className="text-muted-foreground">info@sanbenitoreal.estate</div>
+                  <div className="text-muted-foreground">info@inmobiliariaSanBenito.com</div>
                 </div>
               </div>
 
@@ -374,7 +371,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="font-bold text-foreground">Oficina</div>
-                  <div className="text-muted-foreground">123 Avenida de Lujo, San Benito, CA 94000</div>
+                  <div className="text-muted-foreground">MonteCristo, San José Pinula</div>
                 </div>
               </div>
 
@@ -433,9 +430,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-primary-foreground rounded-sm flex items-center justify-center">
-                  <span className="text-foreground font-bold text-sm">SB</span>
-                </div>
+                <img src="/logotipo_00.png" alt="Inmobiliaria San Benito" className="h-8 w-auto" />
                 <span className="font-bold">Inmobiliaria San Benito</span>
               </div>
               <p className="text-sm opacity-80">
