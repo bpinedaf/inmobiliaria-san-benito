@@ -101,7 +101,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="container flex items-center justify-between py-6">
+        <div className="container flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <img src="/logotipo_00.png" alt="Inmobiliaria San Benito" className="h-auto w-48" />
           </div>
